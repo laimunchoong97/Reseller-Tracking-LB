@@ -599,7 +599,7 @@ function buildOverviewCharts() {
     },
     options: { responsive:true, maintainAspectRatio:false,
       scales: {
-        y:  { grid:{color:gridColor}, ticks:{callback:function(v){return 'USD '+v.toLocaleString();}}, title:{display:true,text:'GMV (USD)'} },
+        y:  { grid:{color:gridColor},                ticks:{callback:function(v){return 'USD '+v.toLocaleString();}}, title:{display:true,text:'GMV (USD)'} },
         y2: { position:'right', grid:{drawOnChartArea:false}, ticks:{callback:function(v){return 'USD '+v.toLocaleString();}}, title:{display:true,text:'Profit (RM)'} }
       },
       plugins:{ legend:{labels:{color:tickColor}} }
